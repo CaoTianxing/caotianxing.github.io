@@ -2,14 +2,14 @@ node_modules/
 .DS_Store
 
 ## 推送
-*.log
-.idea/
+#*.log
+#.idea/
 
 
 ## 部署
 
-#Thumbs.db
-#db.json
-#*.log
-#public/
-#.deploy*/
+Thumbs.db
+db.json
+*.log
+public/
+.deploy*/
