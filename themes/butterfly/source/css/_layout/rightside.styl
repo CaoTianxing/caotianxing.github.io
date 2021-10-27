@@ -1,0 +1,46 @@
+#rightside
+  position: fixed
+  right: -48px
+  bottom: $rightside-bottom
+  z-index: 100
+  opacity: 0
+  transition: all .5s
+
+  #rightside-config-hide
+    transition: transform .4s
+    transform: translate(48px, 0)
+
+    &.show
+      transform: translate(0, 0) !important
+
+  & > div
+    & > button,
+    & > a
+      display: block
+      margin-bottom: 5px
+      width: w = 38px
+      height: w
+      border-radius: 5px
+      background-color: var(--btn-bg)
+      color: var(--btn-color)
+      text-align: center
+      font-size: 16px
+      line-height: w
+
+      &:hover
+        background-color: var(--btn-hover-color)
+
+      +maxWidth768()
+        width: w = 34px
+        height: w
+        line-height: w
+
+  #mobile-toc-button
+    display: none
+
+    +maxWidth900()
+      display: block
+
+  +maxWidth900()
+    #hide-aside-btn
+      display: none
